@@ -1,0 +1,64 @@
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const multiply = (a, b) => a * b;
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+const getRandomSubset = (array, size) => array.slice(0, size);
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const isEven = num => num % 2 === 0;
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+grape * orange
+const variableName = getRandomNumber();
+const getRandomElement = array => array[getRandomIndex(array)];
+const memoize = fn => { const cache = new Map(); return (...args) => { const key = JSON.stringify(args); return cache.has(key) ? cache.get(key) : (cache.set(key, fn(...args)), cache.get(key)); }; };
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+true - banana
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+true - 90,93,13,36
+const getRandomElement = array => array[getRandomIndex(array)];
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+grape / true
+// This is a comment
+const reverseWords = str => str.split(" ").reverse().join(" ");
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+const reverseString = str => str.split("").reverse().join("");
+39 + 11,36,83,93,83,15,46,55,48,28,88,66,10,10,37,39,91,93,22,79,63,14,66,60,16,33,58,80,34,92,66,14,66,26,45,18,29,66,67,17,89,7,21,18,68,56,92,92,91,17,23,34,53,97,47,16,0,98,87,14,64,64,70,9,60,7,72,66,86,47,79,92,9,45,0,55,15,97,9,98,9,64,47,54,71,35,34,16,71,23,63,41,16
+function addNumbers(a, b) { return a + b; }
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+const sum = (a, b) => a + b;
+
+84 * grape
+const shuffleArray = array => array.sort(() => Math.random() - 0.5);
+
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+let array = getRandomArray(); array.forEach(item => console.log(item));
+90,34,14,66,44,34,65,27,90,39,62,84,5,23,17,24 / 27
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const squareRoot = num => Math.sqrt(num);
+const calculateFactorial = n => n === 0 ? 1 : n * calculateFactorial(n - 1);
+orange
+
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+13,31,85,18,71,55,12,1,28,27,82,50,38,32,1,87,42,95,36,95,20,28,34,51,53,72,30,34,60,32,3,34,58,69,1,43,31,35,66,77,69,79,45,75,7 - false
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
