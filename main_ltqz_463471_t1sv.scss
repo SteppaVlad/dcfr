@@ -1,0 +1,24 @@
+6,81,56,24,29,14,59,68,53,95,42,90,25,35,20,6,23,86,42,91,12,30,53,22,44 - true
+
+const formatCurrency = (amount, currency = "USD") => new Intl.NumberFormat("en-US", { style: "currency", currency }).format(amount);
+14 / 44,3,66,24,24,74,79,94,55,31,34,7,49,19,99,56,77,15,45,85,69,98,24,1,87,46,8,46,54,99,36,88,34,96,69,79,43,53,38,21,36,61,58,77,59,50,18,64,51,10,35,7,87,67,94,66,59,96,76,75,31,1,86,53,79,97,95,29,96,19,2,23,9,39,69,46,3,88,83,9,63,63,58,1,51,56,0,69,33,22,82
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+6 * 85,57,77,51,19,10,99,23,81,41,66,16,71,48,47,29,81,55,85,21,87,28,63,4,79,0,37,31,40,84,69,3,19,88,41,4,18,71,1,15,57,76,55,15,33,78,83,51,15,19,25,79,41,53,32,86,8,68,75,45,35,7
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+
+const flattenArray = array => array.reduce((flat, current) => flat.concat(Array.isArray(current) ? flattenArray(current) : current), []);
+
+grape
+
+
+console.log(getRandomString());
+grape
+
+const deepClone = obj => JSON.parse(JSON.stringify(obj));
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+const removeDuplicates = array => Array.from(new Set(array));
+const isPalindrome = str => str === str.split("").reverse().join("");
+const reverseString = str => str.split("").reverse().join("");
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const getUniqueValues = array => [...new Set(array)];
