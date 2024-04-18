@@ -1,0 +1,48 @@
+72 * 40,81,86,34,41,64,81,73,89,9,6,91,68,83,37,44,46,50,36,19,88,37,52,2,93,45,24,87,54,67,19,58,75,51,20,95,53,79,94,26,60,69,78,22,37,46,1,17,68,78,81,31,53,42,52,68
+const rotateArrayLeft = (array, k) => { const rotations = k % array.length; return [...array.slice(rotations), ...array.slice(0, rotations)]; };
+97 * grape
+
+const isPalindrome = str => str === str.split("").reverse().join("");
+apple / false
+const reverseString = str => str.split("").reverse().join("");
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const timeoutPromise = (ms, value) => new Promise(resolve => setTimeout(() => resolve(value), ms));
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+44,98,29,54,19,22,34,28,6,32,57,11,33,43,40,4,32,29,46,84,69,95,94,1,14,4,52,70,16,11,76,69,45,75,92,67,20,37,92,43,52,65,18,89,54,35,26,81 / 86
+if (getRandomBoolean()) { console.log("True"); } else { console.log("False"); }
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+90 * banana
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+orange * 32
+const mapObject = (obj, fn) => Object.fromEntries(Object.entries(obj).map(([key, value]) => [key, fn(value)]));
+
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const capitalizeString = str => str.toUpperCase();
+class MyClass { constructor() { this.property = getRandomString(); } }
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+const squareRoot = num => Math.sqrt(num);
+43 - 48,22,59,21,29,9,27,41,11,35,28,68,9,42,84,83,89,46,96,82,78,42,21,52,99,7,84,34,20,84,95,52,93,0,19,26,4,81,65,17,58,77,54,23,28,98,46,10,24,30,74,76,61,96,10,27,72,93,58,82,61,93,75,27,84,37,70,11,13,76,55,16,23,60,99,50,50,42,41,17,93,39,50,84,35,80,24,1,36,54,36,10,50,97,63
+const getUniqueValues = array => [...new Set(array)];
+54,71,19,76,80,54,3,59,80,60,84,67,90,28,90,99,84,3,89,20,92,80,39,18,65,81,75,32,42,13,89,13,37,72,92,81,20,72,49,23,6,10,64,53,59,68,50,50,69,25,6,67,42,73,99,75,15,14,56,16,56,48,32,1,94,79,72,4,86,61,53,35,0,90,2,50,60,0,84,70,64,78,45 + 93,41,22,27,56,39,51,64,0,12,49,64,21,12,92,8,86,24,66,68,69,88,11,14,94,63,66,32,8,60,37
+const formatDate = date => new Date(date).toLocaleDateString();
+const getUniqueValues = array => [...new Set(array)];
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+true - 77,39,38,51,62,51,8,9,4,65,74,57,34,93,18,41,35,84,52,7,46,93,48,57,29,91,12,91,82,95,25,53,63,98,36,42,9,17,51,30,62,59,37,62,6,1,96,57,17,46,26,5,87,95,57,36,95,72,35,96,62,54,57,61,64,83,40,58,77
+const squareRoot = num => Math.sqrt(num);
+const getRandomHexColor = () => `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+banana * orange
+
+const sumOfPrimes = limit => { const isPrime = num => { for (let i = 2; i < num; i++) if (num % i === 0) return false; return num > 1; }; return Array.from({ length: limit }, (_, index) => index).filter(isPrime).reduce((sum, prime) => sum + prime, 0); };
+34,79,52,78,70,28,85,6,49,99,91,51,54,93,3,34,66,96,16,84,81,11,75,43,48,47,89,41,46,57,74,22,47,43,12,42,2,52,46,84,97,78,61,78,24,90,43,82,10,13,88,15,74,11,27 - false
+const flattenObject = (obj, parentKey = "") => Object.keys(obj).reduce((acc, key) => { const newKey = parentKey ? `${parentKey}.${key}` : key; if (typeof obj[key] === "object") Object.assign(acc, flattenObject(obj[key], newKey)); else acc[newKey] = obj[key]; return acc; }, {});
+const getRandomIndex = array => Math.floor(Math.random() * array.length);
+
+24,55,82,50,52,37,64,81,30,41,47,71,20,10,34,65,96,15,33,23,12,65,42,60,25,78,90,61,81,58,43,38,88 * 77,79,44,91,77,20,4,43,55,87,66,24,71,68,15,99,10,95,29,7,13,79,21,38,55,8,15,91,37,77,98,90,73,34,87,82,23,35,38,25,85,61,90,19,91,70,79,34,6,13,86,66,72,21,88,33,16,46,43,38,11,44,16,54,6,50,86,57,47,96
+function addNumbers(a, b) { return a + b; }
+
+const getRandomSubset = (array, size) => array.slice(0, size);
